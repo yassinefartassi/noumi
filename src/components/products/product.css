@@ -1,0 +1,115 @@
+/* Root Variables */
+:root {
+  --light-gray: #e6e6e6;
+  --warm-beige: #c5a880;
+  --deep-brown: #532e1c;
+  --dark-black: #0f0f0f;
+  --white: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-gray);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--dark-black);
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px var(--hover-shadow-color);
+}
+
+/* Product Title */
+.product-title h1 {
+  font-size: 22px;
+  margin: 15px;
+  text-align: center;
+  color: var(--deep-brown);
+}
+
+/* Product Image */
+.product-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Product Description */
+.product-description {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-description h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--warm-beige);
+}
+
+.product-description p {
+  font-size: 14px;
+  color: var(--dark-black);
+  margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-link {
+  display: inline-block;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--deep-brown);
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+  background-color: var(--warm-beige);
+  color: var(--dark-black);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%; /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 column on mobile */
+  }
+}

@@ -1,0 +1,111 @@
+/* Root Variables */
+:root {
+  --light-gray: #e6e6e6;
+  --warm-beige: #c5a880;
+  --deep-brown: #532e1c;
+  --dark-black: #0f0f0f;
+  --white: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--deep-brown);
+  color: var(--white);
+  position: relative;
+}
+
+.logo h1 {
+  color: var(--warm-beige);
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--warm-beige);
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: var(--warm-beige);
+  color: var(--dark-black);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: var(--light-gray);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Toggle Menu on Mobile */
+.open {
+  transform: rotate(45deg);
+}
+
+.nav-links.open {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: var(--deep-brown);
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

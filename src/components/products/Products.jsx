@@ -26,7 +26,7 @@ const Products = () => {
               <p>{item.desc}</p>
             </div>
             <a
-              href={`https://wa.me/+212623505467?text=I'm%20interested%20in%20${encodeURIComponent(
+              href={`https://wa.me/+?text=I'm%20interested%20in%20${encodeURIComponent(
                 item.title
               )}`}
               className="whatsapp-link"

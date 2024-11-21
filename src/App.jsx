@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Menu, ShoppingCart, X } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Menu,
+  Phone,
+  ShoppingCart,
+  X,
+} from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,7 +26,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-gray-700 hover:text-black transition">
+          <a
+            href="#nosProuits"
+            className="text-gray-700 hover:text-black transition"
+          >
             Shop
           </a>
           <a href="#" className="text-gray-700 hover:text-black transition">
@@ -113,7 +123,7 @@ const HeroSection = () => {
                   {slide.description}
                 </p>
                 <button className="bg-white text-black px-8 py-3 rounded-none hover:bg-gray-300 transition">
-                  Shop Now
+                  Nos Produits
                 </button>
               </div>
             </div>
@@ -129,21 +139,42 @@ const FeaturedProducts = () => {
     {
       name: "Medjool Select",
       price: "$24.99",
+      description: "Premium grade, 7 pieces sachet",
+      image:
+        "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
+    },
+    {
+      name: "Medjool Select",
+      price: "$24.99",
+      description: "Premium grade, 1kg box",
+      image:
+        "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
+    },
+    {
+      name: "Medjool Select",
+      price: "$24.99",
       description: "Premium grade, 500g box",
       image:
         "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
     },
     {
-      name: "Ajwa Dates",
-      price: "$29.99",
-      description: "Rare selection, 400g box",
+      name: "Medjool Select",
+      price: "$14.99",
+      description: "downgraded grade, 7 pieces sachet",
       image:
-        "https://img.freepik.com/photos-gratuite/dattes-jaunes-seches-beton-autour-feuilles-vertes_114579-25223.jpg?t=st=1732227353~exp=1732230953~hmac=3dc7b1327770a9455cabc1a519301635dfa11fcb26c2047fb53dd0c33bf4dca0&w=1380", // Replace with the correct image URL
+        "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
     },
     {
-      name: "Deglet Noor",
-      price: "$19.99",
-      description: "Classic variety, 500g box",
+      name: "Medjool Select",
+      price: "$14.99",
+      description: "downgraded grade, 1kg box",
+      image:
+        "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
+    },
+    {
+      name: "Medjool Select",
+      price: "$14.99",
+      description: "downgraded grade, 500g box",
       image:
         "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=", // Replace with the correct image URL
     },
@@ -151,7 +182,9 @@ const FeaturedProducts = () => {
 
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
-      <h2 className="text-2xl font-bold mb-8 text-center">Featured Products</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center" id="nosProuits">
+        Featured Products
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (
           <div
@@ -173,7 +206,7 @@ const FeaturedProducts = () => {
               {product.price}
             </p>
             <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
-              Add to Cart
+              Acheter via whatssApp
             </button>
           </div>
         ))}
@@ -196,6 +229,72 @@ const AboutSection = () => {
           <button className="px-8 py-3 bg-black text-white rounded hover:bg-gray-800 transition">
             Learn More
           </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+const Testimonials = () => {
+  const testimonials = [
+    {
+      quote:
+        "These are the best dates I've ever had! The quality is unmatched, and they taste amazing.",
+      name: "Sarah A.",
+      role: "Food Enthusiast",
+      rating: 5,
+    },
+    {
+      quote:
+        "I love how these dates are sustainably sourced. A healthy and ethical choice for my family.",
+      name: "James K.",
+      role: "Nutritionist",
+      rating: 4,
+    },
+    {
+      quote:
+        "Noumidia dates are perfect for every occasion. They’ve become a staple in my kitchen.",
+      name: "Emma R.",
+      role: "Chef",
+      rating: 5,
+    },
+  ];
+
+  const renderStars = (rating) => {
+    return Array.from({ length: 5 }, (_, i) => (
+      <svg
+        key={i}
+        xmlns="http://www.w3.org/2000/svg"
+        className={`w-5 h-5 ${
+          i < rating ? "text-yellow-500" : "text-gray-300"
+        }`}
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.919 1.514 8.272L12 18.902l-7.45 4.595 1.514-8.272L0 9.306l8.332-1.151z" />
+      </svg>
+    ));
+  };
+
+  return (
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-8">What Our Customers Say</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg transition"
+            >
+              <p className="text-gray-700 italic mb-4">"{testimonial.quote}"</p>
+              <div className="flex justify-center mb-4">
+                {renderStars(testimonial.rating)}
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                {testimonial.name}
+              </h4>
+              <p className="text-sm text-gray-500">{testimonial.role}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -228,8 +327,13 @@ const Newsletter = () => {
 const Footer = () => {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 py-12">
-      <div className="max-w-7xl mx-auto text-center text-gray-600">
+      <div className="max-w-7xl mx-auto text-center text-gray-600 mb-4">
         <p>&copy; 2024 NOUMIDIA. All rights reserved.</p>
+      </div>
+      <div className="flex justify-center space-x-6 text-gray-600">
+        <Instagram className="w-6 h-6 cursor-pointer hover:text-gray-800" />
+        <Facebook className="w-6 h-6 cursor-pointer hover:text-gray-800" />
+        <Phone className="w-6 h-6 cursor-pointer hover:text-gray-800" />
       </div>
     </footer>
   );
@@ -242,6 +346,7 @@ const App = () => {
       <HeroSection />
       <FeaturedProducts />
       <AboutSection />
+      <Testimonials />
       <Newsletter />
       <Footer />
     </div>

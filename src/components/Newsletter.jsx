@@ -2,9 +2,9 @@ const Newsletter = () => {
   return (
     <section className="py-16 px-4">
       <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>
+        <h2 className="text-2xl font-bold mb-4">Restez à jour</h2>
         <p className="text-gray-600 mb-6">
-          Subscribe to receive updates and exclusive offers.
+          Abonnez-vous pour recevoir des mises à jour et des offres exclusives.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <input

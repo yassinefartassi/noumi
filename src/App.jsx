@@ -11,7 +11,7 @@ import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
-    <div className="min-h-screen font-sans text-gray-800">
+    <div className=" font-sans text-gray-800">
       <Navbar />
       <HeroSection />
       <FeaturedProducts />

@@ -23,6 +23,13 @@ const HeroSection = () => {
         "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=",
       textColor: "text-white",
     },
+    {
+      title: "Organic Selection",
+      description: "Nature's finest",
+      backgroundImage:
+        "https://fr.le360.ma/resizer/v2/23JXIOWTHRAX7EMU34FY6P7HCU.jpg?auth=abadae4ab2476d2f4e90f6e9ee71a3580e682f4de473788ab27cbf2d9da049ae&smart=true&width=1216&height=684",
+      textColor: "text-white",
+    },
   ];
 
   return (
@@ -56,9 +63,12 @@ const HeroSection = () => {
                 <p className="text-lg md:text-xl mb-6 font-light">
                   {slide.description}
                 </p>
-                <button className="bg-white text-black px-8 py-3 rounded-none hover:bg-gray-300 transition">
+                <a
+                  href="#nosProuits"
+                  className="bg-white text-black px-8 py-3 rounded-none hover:bg-gray-300 transition"
+                >
                   Nos Produits
-                </button>
+                </a>
               </div>
             </div>
           </SwiperSlide>

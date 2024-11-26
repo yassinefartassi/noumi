@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://www.facebook.com/profile.php?id=61568993290586&mibextid=ZbWKwL">
           <Facebook className="w-6 h-6 cursor-pointer hover:text-gray-800" />
         </a>
-        <a href="tel:+496170961709">
+        <a href="tel:+212637123821">
           <Phone className="w-6 h-6 cursor-pointer hover:text-gray-800" />
         </a>
         <a href="mailto:noumiedattes@gmail.com">

@@ -6,20 +6,20 @@ const FeaturedProducts = () => {
   const products = [
     {
       name: "Al Majhoul Select",
-      price: "30 DH",
+      price: "15 DH",
       description: "Premium grade, 7 pieces sachet",
       image: sevenPiece,
     },
     {
       name: "Al Majhoul Select",
-      price: "150 DH",
-      description: "Premium grade, 1kg box",
+      price: "165 DH",
+      description: "Premium grade, 1kg boite",
       image: onekg,
     },
     {
       name: "Al Majhoul Select",
-      price: "300 DH",
-      description: "Premium grade, 2kg box",
+      price: "330 DH",
+      description: "Premium grade, 2kg boite",
       image: twokg,
     },
   ];

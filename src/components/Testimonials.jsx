@@ -2,23 +2,23 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "These are the best dates I've ever had! The quality is unmatched, and they taste amazing.",
-      name: "Sarah A.",
-      role: "Food Enthusiast",
+        "Ce sont les meilleures dattes que j'ai jamais goûtées ! La qualité est incomparable et elles ont un goût incroyable.",
+      name: "Fatima El-Amrani",
+      role: "Passionnée de Gastronomie",
       rating: 5,
     },
     {
       quote:
-        "I love how these dates are sustainably sourced. A healthy and ethical choice for my family.",
-      name: "James K.",
-      role: "Nutritionist",
+        "J'apprécie comment ces dattes sont sourcées de manière durable. Un choix sain et éthique pour ma famille.",
+      name: "Mohammed Benali",
+      role: "Nutritionniste",
       rating: 4,
     },
     {
       quote:
-        "Noumidia dates are perfect for every occasion. They’ve become a staple in my kitchen.",
-      name: "Emma R.",
-      role: "Chef",
+        "Les dattes Noumidia sont parfaites pour toutes les occasions. Elles sont devenues un élément essentiel de ma cuisine.",
+      name: "Leila Harouni",
+      role: "Cheffe Culinaire",
       rating: 5,
     },
   ];

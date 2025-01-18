@@ -11,23 +11,23 @@ const HeroSection = () => {
   const slides = [
     {
       title: "Premium Dates",
-      description: "Sourced with care",
+      description: "Sélectionné avec soin",
       backgroundImage:
-        "https://img.freepik.com/photos-gratuite/dattes-jaunes-seches-beton-autour-feuilles-vertes_114579-25223.jpg?t=st=1732227353~exp=1732230953~hmac=3dc7b1327770a9455cabc1a519301635dfa11fcb26c2047fb53dd0c33bf4dca0&w=1380",
+        "https://cache.marieclaire.fr/data/photo/w1000_ci/58/dattes.jpg",
       textColor: "text-white",
     },
     {
-      title: "Organic Selection",
-      description: "Nature's finest",
+      title: "Selection Organic",
+      description: "Brise Pure",
       backgroundImage:
-        "https://media.istockphoto.com/id/516816754/photo/raw-organic-medjool-dates.jpg?b=1&s=612x612&w=0&k=20&c=bxg6UD0jzL1B7jkVoroYAMB6XKSXK5at7GYwkenO4sM=",
+        "https://medias.reussir.fr/fruits-legumes/2023-06/img_2130.jpg",
       textColor: "text-white",
     },
     {
-      title: "Organic Selection",
-      description: "Nature's finest",
+      title: "Sélection Bio",
+      description: "Le meilleur de la nature",
       backgroundImage:
-        "https://fr.le360.ma/resizer/v2/23JXIOWTHRAX7EMU34FY6P7HCU.jpg?auth=abadae4ab2476d2f4e90f6e9ee71a3580e682f4de473788ab27cbf2d9da049ae&smart=true&width=1216&height=684",
+        "https://ffcuisine.fr/wp-content/uploads/2024/09/1726214894_comment-conserver-les-dattes-sans-les-abimer.jpg",
       textColor: "text-white",
     },
   ];

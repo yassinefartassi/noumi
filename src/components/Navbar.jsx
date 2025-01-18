@@ -16,7 +16,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 items-center">
+          <a href="#" className="text-gray-700 hover:text-black transition">
+            Accueil
+          </a>
           <a
             href="#nosProuits"
             className="text-gray-700 hover:text-black transition"
@@ -27,15 +30,15 @@ const Navbar = () => {
             href="#about"
             className="text-gray-700 hover:text-black transition"
           >
-            A-props de nous
+            À propos de nous
           </a>
           <a
-            href="#footer"
+            href="#contact"
             className="text-gray-700 hover:text-black transition"
           >
-            Contact
+            Contactez-nous
           </a>
-          <button>
+          <button aria-label="Panier">
             <ShoppingCart className="w-6 h-6 text-gray-700 hover:text-black transition" />
           </button>
         </div>
@@ -44,7 +47,7 @@ const Navbar = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-gray-700"
-          aria-label="Toggle menu"
+          aria-label="Ouvrir/Fermer le menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -52,14 +55,23 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div
-            className="absolute top-full left-0 w-full bg-white shadow-md z-40"
+            className="md:hidden absolute top-full left-0 w-full bg-white shadow-md z-40"
             role="menu"
           >
             <div className="flex flex-col space-y-4 p-4">
               <a
+                href="#"
+                className="text-gray-700 hover:text-black"
+                role="menuitem"
+                onClick={() => setIsOpen(false)}
+              >
+                Accueil
+              </a>
+              <a
                 href="#nosProuits"
                 className="text-gray-700 hover:text-black"
                 role="menuitem"
+                onClick={() => setIsOpen(false)}
               >
                 Nos produits
               </a>
@@ -67,16 +79,28 @@ const Navbar = () => {
                 href="#about"
                 className="text-gray-700 hover:text-black"
                 role="menuitem"
+                onClick={() => setIsOpen(false)}
               >
-                A-props de nous
+                À propos de nous
               </a>
               <a
-                href="#footer"
+                href="#contact"
                 className="text-gray-700 hover:text-black"
                 role="menuitem"
+                onClick={() => setIsOpen(false)}
               >
-                Contact
+                Contactez-nous
               </a>
+              <button
+                aria-label="Panier"
+                className="text-left text-gray-700 hover:text-black"
+                onClick={() => setIsOpen(false)}
+              >
+                <div className="flex items-center space-x-2">
+                  <ShoppingCart className="w-6 h-6" />
+                  <span>Panier</span>
+                </div>
+              </button>
             </div>
           </div>
         )}

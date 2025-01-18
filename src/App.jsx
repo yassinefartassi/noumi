@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 // Hero Section Component
 
@@ -18,6 +19,7 @@ const App = () => {
       <AboutSection />
       <Testimonials />
       <Newsletter />
+      <Contact />
       <Footer />
     </div>
   );

@@ -13,7 +13,8 @@ const HeroSection = () => {
       title: "Premium Dates",
       description: "Sélectionné avec soin",
       backgroundImage:
-        "https://cache.marieclaire.fr/data/photo/w1000_ci/58/dattes.jpg",
+        "https://ffcuisine.fr/wp-content/uploads/2024/09/1726214894_comment-conserver-les-dattes-sans-les-abimer.jpg",
+
       textColor: "text-white",
     },
     {
@@ -27,7 +28,8 @@ const HeroSection = () => {
       title: "Sélection Bio",
       description: "Le meilleur de la nature",
       backgroundImage:
-        "https://ffcuisine.fr/wp-content/uploads/2024/09/1726214894_comment-conserver-les-dattes-sans-les-abimer.jpg",
+        "https://cache.marieclaire.fr/data/photo/w1000_ci/58/dattes.jpg",
+
       textColor: "text-white",
     },
   ];
